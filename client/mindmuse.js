@@ -10,4 +10,23 @@ $(document).ready(function() {
          event.preventDefault();
     });
     $('.button:first').click();
+    
+    function feedResize(){
+        var feedSize = $(window).height() - $('#top-panel').height();
+        $('#feed').height(feedSize);
+    }
+    
+
+    
+    function hideFeed() {
+        $('#search').hide();
+    }
+    
+    $('#logo').click(hideFeed);
+    
+    
+    
+    $(window).resize(feedResize);
+    
+    window.onload=feedResize;
 });
