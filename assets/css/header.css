@@ -1,0 +1,60 @@
+#top-panel {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+#top-panel .element {
+    height: 50px;
+}
+
+#logo {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+#logo > p { 
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin: -15px 0px 0px 10px;
+    padding: 0px;
+}
+
+#user-info {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    margin: 5px 10px 0px 0px;
+}
+
+#user-info > #name {
+    font-size: 25px;
+    font-weight: 500;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+#user-info > #photo {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+#user-info > #photo > img {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px; 
+}

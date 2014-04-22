@@ -1,0 +1,66 @@
+#feed {
+    width: 400px;
+    height: 100%;
+    position: relative;
+    border-right: 1px solid #ccc;
+}
+
+#feed > #menu {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0px;
+}
+
+#feed > #menu > #new-idea {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 0px 5px;
+}
+
+#feed > #menu > #search {
+    float: right;
+    height: 50px;
+    margin-right: 5px;
+}
+
+#feed > #menu > #search > input {
+    height: 100%;
+    font-size: 25px;
+    width: 330px;
+    border: none;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+}
+
+#feed > #container {
+    height: 100%;
+}
+
+#feed > #container > .element {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+#feed > #container > .element > .left {
+    position: relative;
+    left: 0px;
+    width: 30px;
+    height: 100px;
+    background-color: white;
+    border-right: 1px solid #ccc;
+}
+
+#feed > #container > .element > .main {
+    right: 0px;
+    width: 370px;
+}
+
+#feed > #container > .element > .main > .title {
+    font-size: 30px;
+}
