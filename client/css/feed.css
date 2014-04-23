@@ -1,7 +1,12 @@
 #feed {
     width: 400px;
-    height: 100%;
-    position: relative;
+    /* height: 100%; */
+    /* position: relative; */
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: auto;
     border-right: 1px solid #ccc;
     background-color: white;
     z-index: 90;
