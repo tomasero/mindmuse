@@ -1,32 +1,30 @@
+function hideFeed() {
+    $('#search').fadeOut();
+    $('#container').fadeOut(); 
+    setTimeout(function() {
+        $('#feed').css('width', '60px');
+    },500);
+    
+}
+function showFeed() {
+    $('#feed').css('width', '400px');
+    setTimeout(function() {
+        $('#search').fadeIn();
+        $('#container').fadeIn();
+    },500);
+ 
+}
+var feedStatus = true;
+
 Template.menu.events({
     'click #arrow': function() {
-        alert('hola');
+        if(feedStatus){
+            feedStatus = false;
+            hideFeed();
+        }else{
+            feedStatus = true;
+            showFeed();
+        }
     }
-});
-
-
-Meteor.startup(function(){
-    //alert('bindings are run.');
-    
-    $('.button').click(function(){
-        $('.panel').hide();
-        $('.button').removeClass('active');
-        var panel = $(this).parent().attr('href');
-        $(panel).fadeIn();
-        $(this).addClass('active');
-    });
-    $('a').click(function(event) {
-        event.preventDefault();
-    });
-    $('.button:first').click();
-    
-    
-    
-    function hideFeed() {
-        $('#search').hide();
-    }
-    
-    $('#logo').click(hideFeed);
-
 });
 
