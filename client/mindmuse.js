@@ -16,13 +16,11 @@ $(document).ready(function() {
         $('#feed').height(feedSize);
     }
     
-
-    
-    function hideFeed() {
-        $('#search').hide();
-    }
-    
-    $('#logo').click(hideFeed);
+    $('#arrow').click(function() {
+        //$('#feed').hide();   
+        //$('#feed').css('margin-left', -400 + "px");
+        alert('hola');
+    });
     
     
     
