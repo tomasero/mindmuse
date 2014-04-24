@@ -70,3 +70,17 @@ Template.menu.helpers({
     projects: proj_data
 });
 
+
+Meteor.startup(function(){
+    function feedResize(){
+        var feedSize = $(window).height() - $('#top-panel').height();
+        $('#feed').height(feedSize);
+        $('#project').height(feedSize);
+    }
+    
+    $(window).resize(feedResize);
+    
+    window.onload=feedResize;
+});
+
+
