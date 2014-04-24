@@ -77,12 +77,6 @@ body {
     overflow: hidden;
 }
 
-#project {
-    width: 90%;
-    height: 100%;
-    padding: 20px;
-    margin: 0px auto;
-}
 
 .section {
     width: 100%;
@@ -202,9 +196,9 @@ a {
 }
 
 #buttons { 
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 auto;
+    width: 100%;
+    border: 1px solid black;
 }
 
 #project-info {
